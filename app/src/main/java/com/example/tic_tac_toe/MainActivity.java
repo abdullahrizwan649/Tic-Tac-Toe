@@ -2,11 +2,11 @@ package com.example.tic_tac_toe;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Objects;
 
@@ -47,6 +47,7 @@ public class MainActivity extends AppCompatActivity {
         result = findViewById(R.id.result_txt);
     }
 
+    @SuppressLint("SetTextI18n")
     public void Check(View view) {
         Button btnCurrent = (Button) view;
         count++;
@@ -60,9 +61,11 @@ public class MainActivity extends AppCompatActivity {
 
         if (flag == 0) {
             btnCurrent.setText("X");
+            btnCurrent.setClickable(false);
             flag = 1;
         } else {
             btnCurrent.setText("O");
+            btnCurrent.setClickable(false);
             flag = 0;
         }
 
@@ -81,7 +84,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             if (b1.equals(b2) && b2.equals(b3) && !b1.equals("")) {
-                if (b1 == "X") {
+                if (b1.equals("X")) {
                     player = "PLAYER 1";
                 } else {
                     player = "PLAYER 2";
@@ -89,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
                 result.setText(player + " WINS");
 
             } else if (b4.equals(b5) && b5.equals(b6) && !b4.equals("")) {
-                if (b4 == "X") {
+                if (b4.equals("X")) {
                     player = "PLAYER 1";
                 } else {
                     player = "PLAYER 2";
@@ -98,7 +101,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             } else if (b7.equals(b8) && b8.equals(b9) && !b7.equals("")) {
-                if (b7 == "X") {
+                if (b7.equals("X")) {
                     player = "PLAYER 1";
                 } else {
                     player = "PLAYER 2";
@@ -107,7 +110,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             } else if (b1.equals(b4) && b4.equals(b7) && !b1.equals("")) {
-                if (b1 == "X") {
+                if (b1.equals("X")) {
                     player = "PLAYER 1";
                 } else {
                     player = "PLAYER 2";
@@ -116,7 +119,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             } else if (b2.equals(b5) && b5.equals(b8) && !b2.equals("")) {
-                if (b2 == "X") {
+                if (b2.equals("X")) {
                     player = "PLAYER 1";
                 } else {
                     player = "PlAYER 2";
@@ -125,7 +128,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             } else if (b3.equals(b6) && b6.equals(b9) && !b3.equals("")) {
-                if (b3 == "X") {
+                if (b3.equals("X")) {
                     player = "PLAYER 1";
                 } else {
                     player = "PLAYER 2";
@@ -134,7 +137,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             } else if (b1.equals(b5) && b5.equals(b9) && !b1.equals("")) {
-                if (b1 == "X") {
+                if (b1.equals("X")) {
                     player = "PLAYER 1";
                 } else {
                     player = "PLAYER 2";
@@ -143,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
 
 
             } else if (b3.equals(b5) && b5.equals(b7) && !b3.equals("")) {
-                if (b3 == "X") {
+                if (b3.equals("X")) {
                     player = "PLAYER 1";
                 } else {
                     player = "PLAYER 2";
@@ -161,7 +164,6 @@ public class MainActivity extends AppCompatActivity {
 
     public void newGame(View view) {
 
-        Button btnCurrent = (Button) view;
         btn1.setText("");
         btn2.setText("");
         btn3.setText("");
