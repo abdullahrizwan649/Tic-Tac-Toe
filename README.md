@@ -1,8 +1,6 @@
 HELLO THERE!
 
 This is my attempt at TIC-TAC-TOE in Android Studio.
-
-The game displays random mathematical questions and the user has to decide if the answer is correct or not.
 ___________________________________________________________________________________________________________
 
 THE BORING STUFF :/
