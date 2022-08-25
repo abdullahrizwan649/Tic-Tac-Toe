@@ -13,6 +13,7 @@ Made while working at KALSOFT :)
 ___________________________________________________________________________________________________________
 
 If you're lazy, here are some screenshots so you can be heavily impressed by my excellence.
+
 ![image](https://user-images.githubusercontent.com/100567651/186664354-0baf904a-c4b5-46a8-baa8-df878980c36f.png)
 
 ![image](https://user-images.githubusercontent.com/100567651/186664437-26e1755a-81ce-4b64-934f-c8040571d9bf.png)
