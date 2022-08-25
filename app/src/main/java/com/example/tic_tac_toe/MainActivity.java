@@ -211,7 +211,7 @@ public class MainActivity extends AppCompatActivity {
 
        start_btn();
 
-        result.setText("PLAYER 1\n   TURN");
+        result.setText("PLAYER 1's\n   TURN");
         flag = 0;
         count = 0;
 
