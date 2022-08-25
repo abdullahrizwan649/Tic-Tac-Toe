@@ -89,6 +89,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     player = "PLAYER 2";
                 }
+                stop_btn();
                 result.setText(player + " WINS");
 
             } else if (b4.equals(b5) && b5.equals(b6) && !b4.equals("")) {
@@ -97,6 +98,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     player = "PLAYER 2";
                 }
+                stop_btn();
                 result.setText(player + " WINS");
 
 
@@ -106,6 +108,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     player = "PLAYER 2";
                 }
+                stop_btn();
                 result.setText(player + " WINS");
 
 
@@ -115,6 +118,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     player = "PLAYER 2";
                 }
+                stop_btn();
                 result.setText(player + " WINS");
 
 
@@ -124,6 +128,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     player = "PlAYER 2";
                 }
+                stop_btn();
                 result.setText(player + " WINS");
 
 
@@ -133,6 +138,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     player = "PLAYER 2";
                 }
+                stop_btn();
                 result.setText(player + " WINS");
 
 
@@ -142,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     player = "PLAYER 2";
                 }
+                stop_btn();
                 result.setText(player + " WINS");
 
 
@@ -151,14 +158,42 @@ public class MainActivity extends AppCompatActivity {
                 } else {
                     player = "PLAYER 2";
                 }
+                stop_btn();
                 result.setText(player + " WINS");
 
 
             } else if (count == 9) {
                result.setText("DRAW");
+                stop_btn();
             }
         }
 
+    }
+
+    public void stop_btn()
+    {
+        btn1.setClickable(false);
+        btn2.setClickable(false);
+        btn3.setClickable(false);
+        btn4.setClickable(false);
+        btn5.setClickable(false);
+        btn6.setClickable(false);
+        btn7.setClickable(false);
+        btn8.setClickable(false);
+        btn9.setClickable(false);
+    }
+
+    public void start_btn()
+    {
+        btn1.setClickable(true);
+        btn2.setClickable(true);
+        btn3.setClickable(true);
+        btn4.setClickable(true);
+        btn5.setClickable(true);
+        btn6.setClickable(true);
+        btn7.setClickable(true);
+        btn8.setClickable(true);
+        btn9.setClickable(true);
     }
 
 
@@ -173,6 +208,8 @@ public class MainActivity extends AppCompatActivity {
         btn7.setText("");
         btn8.setText("");
         btn9.setText("");
+
+       start_btn();
 
         result.setText("PLAYER 1\n   TURN");
         flag = 0;
