@@ -54,9 +54,9 @@ public class MainActivity extends AppCompatActivity {
 
         if(flag == 0)
         {
-            result.setText("PLAYER 1's\n     TURN");
-        }else{
             result.setText("PLAYER 2's\n     TURN");
+        }else{
+            result.setText("PLAYER 1's\n     TURN");
         }
 
         if (flag == 0) {
