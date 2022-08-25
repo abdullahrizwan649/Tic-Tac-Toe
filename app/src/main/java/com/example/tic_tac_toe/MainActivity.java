@@ -51,6 +51,13 @@ public class MainActivity extends AppCompatActivity {
         Button btnCurrent = (Button) view;
         count++;
 
+        if(flag == 0)
+        {
+            result.setText("PLAYER 1's\n     TURN");
+        }else{
+            result.setText("PLAYER 2's\n     TURN");
+        }
+
         if (flag == 0) {
             btnCurrent.setText("X");
             flag = 1;
@@ -75,79 +82,77 @@ public class MainActivity extends AppCompatActivity {
 
             if (b1.equals(b2) && b2.equals(b3) && !b1.equals("")) {
                 if (b1 == "X") {
-                    player = "Player 1";
+                    player = "PLAYER 1";
                 } else {
-                    player = "Player 2";
+                    player = "PLAYER 2";
                 }
-                result.setText("Winner: " + player);
+                result.setText(player + " WINS");
 
             } else if (b4.equals(b5) && b5.equals(b6) && !b4.equals("")) {
                 if (b4 == "X") {
-                    player = "Player 1";
+                    player = "PLAYER 1";
                 } else {
-                    player = "Player 2";
+                    player = "PLAYER 2";
                 }
-                result.setText("Winner: " + player);
+                result.setText(player + " WINS");
 
 
             } else if (b7.equals(b8) && b8.equals(b9) && !b7.equals("")) {
                 if (b7 == "X") {
-                    player = "Player 1";
+                    player = "PLAYER 1";
                 } else {
-                    player = "Player 2";
+                    player = "PLAYER 2";
                 }
-                result.setText("Winner: " + player);
+                result.setText(player + " WINS");
 
 
             } else if (b1.equals(b4) && b4.equals(b7) && !b1.equals("")) {
                 if (b1 == "X") {
-                    player = "Player 1";
+                    player = "PLAYER 1";
                 } else {
-                    player = "Player 2";
+                    player = "PLAYER 2";
                 }
-                result.setText("Winner: " + player);
+                result.setText(player + " WINS");
 
 
             } else if (b2.equals(b5) && b5.equals(b8) && !b2.equals("")) {
                 if (b2 == "X") {
-                    player = "Player 1";
+                    player = "PLAYER 1";
                 } else {
-                    player = "Player 2";
+                    player = "PlAYER 2";
                 }
-                result.setText("Winner: " + player);
+                result.setText(player + " WINS");
 
 
             } else if (b3.equals(b6) && b6.equals(b9) && !b3.equals("")) {
                 if (b3 == "X") {
-                    player = "Player 1";
+                    player = "PLAYER 1";
                 } else {
-                    player = "Player 2";
+                    player = "PLAYER 2";
                 }
-                result.setText("Winner: " + player);
+                result.setText(player + " WINS");
 
 
             } else if (b1.equals(b5) && b5.equals(b9) && !b1.equals("")) {
                 if (b1 == "X") {
-                    player = "Player 1";
+                    player = "PLAYER 1";
                 } else {
-                    player = "Player 2";
+                    player = "PLAYER 2";
                 }
-                result.setText("Winner: " + player);
+                result.setText(player + " WINS");
 
 
             } else if (b3.equals(b5) && b5.equals(b7) && !b3.equals("")) {
                 if (b3 == "X") {
-                    player = "Player 1";
+                    player = "PLAYER 1";
                 } else {
-                    player = "Player 2";
+                    player = "PLAYER 2";
                 }
-                result.setText("Winner: " + player);
+                result.setText(player + " WINS");
 
 
             } else if (count == 9) {
-                Toast.makeText(this, "DRAW", Toast.LENGTH_SHORT).show();
-
-
+               result.setText("DRAW");
             }
         }
 
@@ -167,7 +172,7 @@ public class MainActivity extends AppCompatActivity {
         btn8.setText("");
         btn9.setText("");
 
-        result.setText("RESULT");
+        result.setText("PLAYER 1\n   TURN");
         flag = 0;
         count = 0;
 
