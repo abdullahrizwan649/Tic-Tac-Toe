@@ -7,28 +7,31 @@
     android:background="#FFAB00"
     tools:context=".MainActivity">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"
         android:orientation="vertical">
 
-        <TextView
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="20dp"
             android:fontFamily="sans-serif-condensed-medium"
+            android:src="@drawable/tictext"
             android:text="TIC-TAC-TOE"
             android:textColor="@color/black"
-            android:textSize="30sp">
+            android:textSize="30sp"
+            android:layout_marginTop="30dp">
 
-        </TextView>
-
+        </ImageView>
         <GridLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:columnCount="3"
-            android:rowCount="3">
+            android:rowCount="3"
+            android:layout_marginTop="10dp">
 
             <Button
                 android:id="@+id/btn1"
@@ -109,7 +112,7 @@
             android:fontFamily="sans-serif-condensed-medium"
             android:text="PLAYER 1's\n     TURN"
             android:textColor="@color/black"
-            android:textSize="30sp"/>
+            android:textSize="30sp" />
 
         <Button
             android:layout_width="wrap_content"
@@ -117,9 +120,10 @@
             android:layout_marginTop="20dp"
             android:backgroundTint="@color/black"
             android:fontFamily="sans-serif-condensed-medium"
+            android:onClick="newGame"
             android:text="PLAY AGAIN"
-            android:textColor="#FFAB00"
-            android:onClick="newGame"/>
+            android:textColor="#FFAB00" />
+
 
     </LinearLayout>
 
