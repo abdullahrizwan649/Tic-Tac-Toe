@@ -13,13 +13,14 @@ Made while working at KALSOFT :)
 ___________________________________________________________________________________________________________
 
 If you're lazy, here are some screenshots so you can be heavily impressed by my excellence.
-![image](https://user-images.githubusercontent.com/100567651/187733338-d1429de0-e258-4d2d-a255-81a6915d8368.png)
+![image](https://user-images.githubusercontent.com/100567651/187733338-d1429de0-e258-4d2d-a255-81a6915d8368.png
 
-![image](https://user-images.githubusercontent.com/100567651/186664354-0baf904a-c4b5-46a8-baa8-df878980c36f.png)
+![image](https://user-images.githubusercontent.com/100567651/187733489-a1ac33ae-d0e5-4af5-8f36-a2d7c6cd2c32.png)
 
-![image](https://user-images.githubusercontent.com/100567651/186664437-26e1755a-81ce-4b64-934f-c8040571d9bf.png)
+![image](https://user-images.githubusercontent.com/100567651/187733569-fc4e9d29-e267-44ff-85b8-5e748a82a329.png)
 
-![image](https://user-images.githubusercontent.com/100567651/186664671-da9c28d4-c67f-4cae-aba2-9ed575aeb3ac.png)
+![image](https://user-images.githubusercontent.com/100567651/187733634-e215f57b-f6d9-40ed-8035-f471e52b7355.png)
+
 __________________________________________________________________________________________________________
 HOW TO RUN IT?
 
